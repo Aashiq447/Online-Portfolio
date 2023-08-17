@@ -108,9 +108,14 @@
         background-position: center;
         color: black;
         padding: 50px;
+        gap: 20px; /* Adjust the gap between skill blocks */
         text-align: center;
         height: 650px; /* Adjust the height as desired */
-      }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; /* Change this to space-around */
+        align-items: center; /* Vertically center-align items */
+       }
       
       #contact {
         background-image: url('Blank ones/images4.jpg');
@@ -396,11 +401,11 @@
   }
 
   /* Style for individual skill blocks */
-  .skill {
-    width: calc(33.33% - 20px); /* Adjust the width as needed */
+  .skill {                  /*40*/
+    width: calc(33.33% - 100px); /* Adjust the width as needed */
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;  /*20*/
     border: 2px solid white;
     border-radius: 10px;
   }
