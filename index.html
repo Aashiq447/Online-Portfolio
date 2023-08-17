@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+      /* Set larger images within sections */
+      #about img,
+      #projects img,
+      #skills img,
+      #contact img {
+        max-width: 100%;
+        height: auto;
+        width: 100%; /* You can adjust this value for the desired width */
+        height: 400px; /* Adjust the height as desired */
+      }
+  
+      /* Inline styles for background images */
+      #about {
+        background-image: url('Blank ones/images.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 50px;
+        margin-bottom: 50px; /* Add margin to move the section closer to the end */
+        text-align: center;
+        height: 350px; /* Adjust the height as desired */
+        font-size: 21px; /* Adjust the font size */
+        position: relative; /* Add this */
+      }
+       /* Styling for the heading within the About Me section */
+       #about h2 {
+       color: lightcyan; /* Change heading color to gold */
+       font-size: 35px; 
+      }
+      
+      #projects {
+        background-image: url(' Blank ones/6.jpg ');
+        background-size: cover;
+        background-position: center;
+        color: black;
+        padding: 50px;
+        text-align: center;
+        height: 750px; /* Adjust the height as desired */
+      }
+      .section-heading {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: white; /* Change the heading color */
+      }
+      
+      .projects-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      
+      .project {
+        width: calc(33.33% - 20px); /* To create space between project containers */
+        background-color: rgba(19, 172, 65, 0.384); /* Adjust the background color */
+        padding: 20px;
+        box-sizing: border-box;
+        border: 2px solid white; /* Add a solid border */
+      }
+      
+      .project-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .project h3 {
+        color: white;
+        font-size: 28px; /* Adjust the font size for project headings */
+      }
+      
+      .project img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .project p {
+        color: white;
+        font-size: 20px; /* Adjust the font size as desired */
+      }
+      
+      .github-button {
+        background-color: lightseagreen;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        margin-top: 10px;
+        color: white;
+      }
+      
+      .github-button:hover {
+        background-color: darkcyan;
+      }
+       
+      /*CSS for projects ends*/
+      #skills {
+        background-image: url(' Blank ones/9.1.jpg ');
+        background-size: cover;
+        background-position: center;
+        color: black;
+        padding: 50px;
+        text-align: center;
+        height: 650px; /* Adjust the height as desired */
+      }
+      
+      #contact {
+        background-image: url('Blank ones/images4.jpg');
+        background-size: cover;
+        background-position: center;
+        color: black;
+        padding: 50px;
+        text-align: center;
+        height: 450px; /* Adjust the height as desired */
+      }
+      
+      /* */
+      .contact-outline {
+        border: 2px solid lightseagreen;
+        padding: 20px;
+        margin: 0; /* Remove margin to align to the left */
+        width: 70%; /* Adjust the width as desired */
+        max-width: 550px; /* Set a maximum width if needed */
+        box-sizing: border-box; /* Ensure padding is included in width and height */
+        text-align: left; /* Align the text to the left */
+        margin-right: auto; /* Add margin to push the content to the left */
+        margin-left: 30px; /* Adjust this value to move the box to the right */
+      }
+    
+      #contact h2 {
+        font-size: 31px; /* Adjust the font size as desired */
+        margin-bottom: 10px;
+        color: lightseagreen; /* Change the heading color here */
+      }
+    
+      #contact form {
+        margin-top: 10px;
+      }
+    
+      #contact label, #contact input, #contact textarea, #contact button {
+        display: block;
+        margin-bottom: 10px;
+      }
+    
+      #contact button {
+        background-color: lightseagreen;
+        border: none;  
+        padding: 5px 10px;
+        cursor: pointer;
+        margin: 0 auto; /* Center the button horizontally */
+        display: block; /* Ensure the button takes up full width */
+      }
+      /**/
+
+      /* Increase the font size of the h1 element */
+    h1 {
+      font-size: 40px; /* Adjust the font size as needed */
+      text-align: center;
+    }
+     
+    /*Outlining the text for about us context*/
+    .outline {
+      border: 2px solid white;
+      padding: 10px;
+    }
+/*Outlining the text for about us context*/
+.outline {
+  border: 2px solid white;
+  padding: 10px;
+}
+#message {
+  resize: vertical; /* Allow vertical resizing */
+  min-height: 100px; /* Set a minimum height for the textarea */
+}
+
+   /* Add this style to target the "Download CV" button */
+   .contact-details a button.download-button {
+    border: none;
+    outline: none;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+       <!---- <h1 style="text-align: center;">My Portfolio</h1-->
+
+        <h1 style="text-align: center; font-size: 42px;">My Portfolio</h1> <!-- Adjust font-size -->
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+         <!-- Include your logo here -->
+        <h1 style="text-align: center;">
+        <img src="Blank ones/Logo.png" alt="Logo" style="height: 100px;"> 
+        <!-- Adjust the height as needed -->
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+
+     <!--<section id="about">-->
+      <section id="about" style="display: flex; align-items: center;">                                                           <!--300px-->
+        <img src="Blank ones/2.png" alt="Profile Image" style="width: 365px; height: 420px; border-radius: 0%; margin-right: 60px;">
+        <div>
+      <div class="outline">
+      <h2>About Me</h2>
+      </div>
+      <div class="outline">
+      <p>My Name is - Aashiq Daniels</p>
+      <p>Welcome to my portfolio! I am a Software developer, enthusiastic </p>
+      <p>about creating beautiful and functional websites.</p>
+      <p>I have a passionate interest in IT.</p>
+      <p>I am hardworking and dedicated to performing at the highest level.</p>
+      </div>
+  </section>
+  <!---->
+ 
+ 
+<section id="projects">
+  <h2 class="section-heading">Projects</h2>
+  <div class="projects-container">
+    <div class="project">
+      <div class="project-content">
+        <h3> GUI-Banking-App</h3>
+        <div class="image-container">
+          <br>
+          <img src="  project-images/Bank-app2.PNG   " alt="Project 1">
+        <!----<button class="view-more-button" data-images="project1-2.jpg,   project1-3.jpg">View More</button>-->
+        </div>
+        <p>Has options, for a user to withdraw and Deposit an account</p>
+        <a href="https://github.com/Aashiq447/GUI-Banking-App-.git" target="_blank">
+          <button class="github-button">View on GitHub</button>
+        </a>
+      </div>
+    </div>
+    
+    <div class="project">
+      <div class="project-content">
+        <h3> Mzamomtsha Primary School[Website] </h3>
+        <br>
+        <div class="image-container">
+          <img src="project-images/website-1.PNG" alt="Project 2">
+
+        <!--  <button class="view-more-button" data-images="project-images/website-2.PNG,  project-images/website-3.PNG  ">View More</button>-->
+        </div>
+        <p>Has Games, Registration and Applying for a new Job </p>
+        <a href="https://github.com/Aashiq447/New-Complete-Website.git" target="_blank">
+          <button class="github-button">View on GitHub</button>
+        </a>
+      </div>
+    </div>
+    
+    <div class="project">
+      <div class="project-content">
+        <h3> Python-Financial-Calculator</h3>
+        <br>
+        <div class="image-container">
+          <img src=" project-images/Finanancial-Calulator1.PNG" alt="Project 3">
+
+        <!--<button class="view-more-button" data-images="project3-2.jpg ,   project3-3.jpg">View More</button>-->
+        </div>
+        <p>Gives the calculations of Bond Repayments and Investments</p>
+        <a href="https://github.com/Aashiq447/Python-Financial-Calculator-.git" target="_blank">
+          <button class="github-button">View on GitHub</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+  <!---->
+    <section id="skills">
+      <h2 class="skills-heading">Skills</h2> <!-- Add the heading with a class -->
+      <div class="skills-container">
+        <div class="skill">
+          <h2>⚙️ HTML</h2>
+          <p>HTML5 fundamentals</p>
+          <p>Semantic markup</p>
+          <p>Forms and input validation</p>
+        </div>
+        
+        <div class="skill">
+          <h2>🎨 CSS</h2>
+          <p>CSS3 properties</p>
+          <p>Responsive design</p>
+          <p>Flexbox and Grid</p>
+        </div>
+        
+        <div class="skill">
+          <h2>☕ Java</h2>
+          <p>Object-oriented programming</p>
+          <p>Java syntax and concepts</p>
+          <p>Working with classes and objects</p>
+        </div>
+        
+        <div class="skill">
+          <h2>🐍 Python</h2>
+          <p>Python basics and syntax</p>
+          <p>Data manipulation and analysis</p>
+          <p>Python frameworks</p>
+        </div>
+        
+        <div class="skill">
+          <h2>🔥 JavaScript</h2>
+          <p>ES6 and modern JavaScript</p>
+          <p>DOM manipulation</p>
+          <p>AJAX and fetch</p>
+        </div>
+        
+        <div class="skill">
+          <h2>⚛️ React</h2>
+          <p>Component-based architecture</p>
+          <p>State and props management</p>
+          <p>React Router and hooks</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-outline">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/xleyjywk" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      </div>
+        <!-- New Contact Me details -->
+      <div class="contact-details" style="margin-top: 60px; margin-left: 40px;" >
+        <h2>Contact Me Details</h2>
+        <p>Phone Number: 071 774 2325</p>
+        <p>Email Address: aashiqdaniels447@gmail.com</p>
+        <br>
+        <h2>CV</h2>
+        <a href="CV/Candidate Resume [Aashiq Daniels].pdf" target="_blank">
+          <button  class="download-button"  >Download CV</button>
+        </a>
+      </div>
+    </section> 
+    
+  </main>
+  
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 Aashiq Daniels. All rights reserved.</p>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+  <style>
+    .contact-details {
+      border: 2px solid lightseagreen;
+      padding: 20px;
+      margin-left: auto; /* Pushes the content to the right */
+      width: 40%; /* Adjust the width as desired */
+      box-sizing: border-box;
+    }
+    
+    /* Add this CSS to ensure alignment with the "Contact Me" section */
+    #contact {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+   
+     /* Common styling for skills section */
+  #skills {
+    color: white;
+    padding: 50px;
+    text-align: center;
+  }
+
+  /* Style for skills container */
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* Style for individual skill blocks */
+  .skill {
+    width: calc(33.33% - 20px); /* Adjust the width as needed */
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+
+  /* Style for skill headings */
+  .skill h2 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  /* Style for skill content */
+  .skill p {
+    color: white;
+  }
+
+   /* Style for the "Skills" heading */
+.skills-heading {
+  font-size: 45px; /* Adjust the font size as desired */
+  margin-bottom: 20px; /* Add some spacing below the heading */
+  color: white; /* Set the heading color */
+}
+
+</style>
+  
+<script>
+  // Get the message textarea element
+  const messageTextarea = document.getElementById('message');
+
+  // Automatically adjust the textarea height as the user types
+  messageTextarea.addEventListener('input', function() {
+    this.style.height = 'auto';
+    this.style.height = (this.scrollHeight) + 'px';
+  });
+</script>
+  <script src="script.js"></script>
+</body>
+</html>
