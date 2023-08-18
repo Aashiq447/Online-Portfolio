@@ -187,11 +187,7 @@
   min-height: 100px; /* Set a minimum height for the textarea */
 }
 
-   /* Add this style to target the "Download CV" button */
-   .contact-details a button.download-button {
-    border: none;
-    outline: none;
-  }
+
   </style>
 </head>
 <body>
@@ -383,7 +379,7 @@
           <button  class="download-button"  >Download CV</button>
         </a>
       <br>
-        <div style="display: flex; align-items: center; gap: 20px; margin-left: 60px;"> <!-- Adjust margin-left as needed -->
+        <div style="display: flex; align-items: center; gap: 20px; margin-left: 110px;"> <!-- Adjust margin-left as needed -->
           <br><br><br>
           <h3>GitHub</h3>
           <a href="https://github.com/Aashiq447/Online-Portfolio" target="_blank">
@@ -476,17 +472,58 @@
 }
 
 </style>
-  
-<script>
-  // Get the message textarea element
-  const messageTextarea = document.getElementById('message');
+<style>
+/* Extra Small Devices (phones) */
+@media (max-width: 576px) {
+  /* Additional adjustments for small screens */
+}
 
-  // Automatically adjust the textarea height as the user types
-  messageTextarea.addEventListener('input', function() {
-    this.style.height = 'auto';
-    this.style.height = (this.scrollHeight) + 'px';
-  });
-</script>
+/* Small Devices (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  /* Additional adjustments for tablets */
+}
+
+/* Medium Devices (desktops) */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Additional adjustments for medium screens */
+}
+
+/* Large Devices (large desktops) */
+@media (min-width: 993px) {
+  /* Additional adjustments for large screens */
+}
+
+
+</style>
+  <script>
+    
+  </script>
+
+<!--<script>
+ // JavaScript for responsive behavior
+ function adjustLayout() {
+  const screenWidth = window.innerWidth;
+
+  // Update styles based on screen width
+  if (screenWidth <= 768) {
+    // Adjust styles for small screens
+    // For example:
+    document.getElementById('about').style.padding = '30px';
+    // Add more adjustments as needed
+  } else {
+    // Reset styles for larger screens
+    // For example:
+    document.getElementById('about').style.padding = '50px';
+    // Reset other styles as needed
+  }
+}
+
+// Run the adjustLayout function on page load and window resize
+window.addEventListener('load', adjustLayout);
+window.addEventListener('resize', adjustLayout);
+</script>-->
   <script src="script.js"></script>
+  <!-- Include the new responsive.js script -->
+<script src="responsive.js"></script>
 </body>
 </html>
